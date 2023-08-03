@@ -36,11 +36,11 @@ python sploitableTools.py
 
 # Documentation
 
-Check the documentation for every scripts : [Documentation](https://github.com/HugoDELCROIX/SploitableTools/scripts/DOCUMENTATION.md).
-
-# Contribution
+Check the documentation for every scripts: [Documentation](https://github.com/HugoDELCROIX/SploitableTools/scripts/DOCUMENTATION.md). if you have any questions, you can contact me [here](https://www.hugodelcroix.fr) or use the [Q&A](https://github.com/HugoDELCROIX/SploitableTools/discussions/categories/q-a).
 
 # License
+
+This Framework is under Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license. Please check [here](https://creativecommons.org/licenses/by-nc/4.0/).
 
 # Disclaimer and Legal Notice
 

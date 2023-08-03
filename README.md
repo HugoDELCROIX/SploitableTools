@@ -1,6 +1,19 @@
 <h1 align="center">SploitableTools</h1>
 <p align="center">Cool Framework to learn simple pentesting tools.</p>
 
+# Context
+
+I'm an IT engineering student with a specialization in cybersecurity. I would like IT students to be able to use a simple, easy-to-understand tool that would introduce them to pentesting. That's why I've created my own Framework of Pentesting!
+
+With SploitableTools, you will be able to:
+
+- Understand simple python scripts and their functioning.
+- Learn the different ways to attack a website or a computer.
+- Discover the good practices and put safety at the forefront of your projects.
+- Try to hack your own projects to discover vulnerabilities
+
+Obviously, it won't be as powerful as some of the most powerful tools on the web, but it will certainly help you learning programming and cybersecurity.
+
 # Installation
 
 Clone the repository:
@@ -23,7 +36,11 @@ python sploitableTools.py
 
 # Documentation
 
-Check the documentation for every scripts :
+Check the documentation for every scripts : [Documentation](https://github.com/HugoDELCROIX/SploitableTools/scripts/DOCUMENTATION.md).
+
+# Contribution
+
+# License
 
 # Disclaimer and Legal Notice
 

@@ -36,7 +36,7 @@ python sploitableTools.py
 
 # Documentation
 
-Check the documentation for every scripts: [Documentation](https://github.com/HugoDELCROIX/SploitableTools/scripts/DOCUMENTATION.md). if you have any questions, you can contact me [here](https://www.hugodelcroix.fr) or use the [Q&A](https://github.com/HugoDELCROIX/SploitableTools/discussions/categories/q-a).
+Check the documentation for every scripts: [Documentation](https://github.com/HugoDELCROIX/SploitableTools/blob/main/scripts/DOCUMENTATION.md). if you have any questions, you can contact me [here](https://www.hugodelcroix.fr) or use the [Q&A](https://github.com/HugoDELCROIX/SploitableTools/discussions/categories/q-a).
 
 # License
 

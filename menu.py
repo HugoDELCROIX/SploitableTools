@@ -32,12 +32,16 @@ $$\   $$ |$$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$\ $$  __$$ |$$ |  $$ |$$ |$$   ___
 """
         )
 
-    options = ["1. XSS Vulnerability Scanner ", "entry 2", "entry 3"]
-    scripts = ["xssForms.py", "test2", "test3"]
+    options = [
+        "1. XSS Vulnerability Scanner",
+        "2. Specific Port Scanner",
+        "3. Vulnerability Scanner",
+    ]
+    scripts = ["xssForms.py", "indivPortScanner.py", "vulnerabilityScanner.py"]
     terminal_menu = TerminalMenu(options)
     menu_entry_index = terminal_menu.show()
 
-    subprocess.run(['python',scripts[menu_entry_index]])
+    subprocess.run(["python", "scripts/" + scripts[menu_entry_index]])
 
 
 if __name__ == "__main__":

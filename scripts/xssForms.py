@@ -84,7 +84,6 @@ def scan(url):
         return result
     except NameError as e:
         return e
-        # return "Error : Missing protocol. Check -h for help."
 
 
 if __name__ == "__main__":

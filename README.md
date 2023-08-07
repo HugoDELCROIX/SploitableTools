@@ -19,7 +19,7 @@ Obviously, it won't be as powerful as some of the most powerful tools on the web
 Clone the repository:
 
 ```
-git clone
+git clone https://github.com/HugoDELCROIX/SploitableTools
 ```
 
 Install required modules:

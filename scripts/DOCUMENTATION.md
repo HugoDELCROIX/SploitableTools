@@ -13,4 +13,8 @@ This script will perform a port scan on the IP address you specify. You need to 
 
 # 3. Vulnerability Scanner
 
-This script will perform a port scan then compare the results with a wordlist containing different versions of vulnerable services. You need to provide an IP address (10.10.10.10) and ports number separated by commas (like 21,22,...). You also need to create a file.txt containing vulnerable service versions at the project root. You can either find the `vulnList.txt` file in the repository and fill it. This script is not working with websites yet.
+This script will perform a port scan then compare the results with a wordlist containing different versions of vulnerable services. You need to provide an IP address (10.10.10.10) and ports number separated by commas (like 21,22,...). You also need to create a file.txt containing vulnerable service versions and move it to the `wordlists` directory. You can either find the `vulnList.txt` file in the `wordlists` directory and fill it. This script is not working with websites yet.
+
+# 4. Bruteforce SSH Credentials
+
+This script will perform a Dictionary-based bruteforce attack on a SSH session. You need to provide the hostname and username used to connect to the session (username@hostname). You also need to create a file.txt containing passwords to try connecting with and move it to the `wordlists` directory. You can either find the `passwdList.txt` file in the `wordlists` directory and fill it.

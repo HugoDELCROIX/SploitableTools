@@ -46,8 +46,17 @@ def is_ssh_open(host, user, passwd):
 
 if __name__ == "__main__":
     host = input("Enter an hostname : ")
+    if host == "":
+        print("Please enter a valid hostname.")
+        exit(0)
     user = input("Enter an username : ")
+    if user == "":
+        print("Please enter a valid username.")
+        exit(0)
     file = input("Enter password wordlist path : ")
+    if file == "":
+        print("Please enter a file name.")
+        exit(0)
     verbose = input("Verbose (y/n) : ")
     if verbose == "y" or verbose == "yes":
         is_verbose = True

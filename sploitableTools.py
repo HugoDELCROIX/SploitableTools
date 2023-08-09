@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from os import get_terminal_size
 from simple_term_menu import TerminalMenu
 import subprocess
@@ -36,12 +38,18 @@ $$\   $$ |$$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$\ $$  __$$ |$$ |  $$ |$$ |$$   ___
         "1. XSS Vulnerability Scanner",
         "2. Specific Port Scanner",
         "3. Vulnerability Scanner",
+        "4. Bruteforce SSH Credentials",
     ]
-    scripts = ["xssForms.py", "indivPortScanner.py", "vulnerabilityScanner.py"]
+    scripts = [
+        "xssForms.py",
+        "indivPortScanner.py",
+        "vulnerabilityScanner.py",
+        "sshBruteforce.py",
+    ]
     terminal_menu = TerminalMenu(options)
     menu_entry_index = terminal_menu.show()
 
-    subprocess.run(["python", "scripts/" + scripts[menu_entry_index]])
+    subprocess.run(["python3", "scripts/" + scripts[menu_entry_index]])
 
 
 if __name__ == "__main__":

@@ -12,7 +12,7 @@ With SploitableTools, you will be able to:
 - Discover the good practices and put safety at the forefront of your projects.
 - Try to hack your own projects to discover vulnerabilities
 
-Obviously, it won't be as powerful as some of the most powerful tools on the web, but it will certainly help you learning programming and cybersecurity.
+Obviously, it won't be as powerful as some of the strongest tools on the web, but it will certainly help you learning programming and cybersecurity.
 
 # Installation
 
@@ -36,7 +36,7 @@ python sploitableTools.py
 
 # Documentation
 
-Check the documentation for every scripts: [Documentation](https://github.com/HugoDELCROIX/SploitableTools/blob/main/scripts/DOCUMENTATION.md). if you have any questions, you can contact me [here](https://www.hugodelcroix.fr) or use the [Q&A](https://github.com/HugoDELCROIX/SploitableTools/discussions/categories/q-a).
+Check the documentation for every scripts: [Documentation](https://github.com/HugoDELCROIX/SploitableTools/blob/main/DOCUMENTATION.md). if you have any questions, you can contact me [here](https://www.hugodelcroix.fr) or use the [Q&A](https://github.com/HugoDELCROIX/SploitableTools/discussions/categories/q-a).
 
 # License
 

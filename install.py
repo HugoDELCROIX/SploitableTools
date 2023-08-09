@@ -2,7 +2,6 @@
 
 import subprocess
 import os
-from scripts.colors import green, reset, red, blue
 
 modules = ["simple_term_menu", "colorama", "paramiko", "requests", "bs4"]
 installed = []
@@ -15,25 +14,18 @@ for module in modules:
     except subprocess.CalledProcessError:
         errors.append(module)
 
-print(green + "\r\nModules installed:" + reset)
+print("\r\nModules installed:")
 for module in installed:
-    print(green + "- " + module + reset)
+    print("- " + module)
 
 if errors:
-    print(red + "\r\nError when installing:" + reset)
+    print("\r\nError when installing:")
     for module in errors:
-        print(red + "- " + module + reset)
+        print("- " + module)
 
 if os.path.exists(os.getcwd() + "/wordlists"):
     try:
         os.chmod(os.getcwd() + "/wordlists", 0o755)
-        print(
-            f"\r\n{blue}Read permission granted to "
-            + os.getcwd()
-            + "/wordlists"
-            + reset
-        )
+        print(f"\r\nRead permission granted to " + os.getcwd() + "/wordlists")
     except Exception:
-        print(
-            f"{blue}Unable to grant permission to {os.getcwd()}/wordlists{reset}{Exception}"
-        )
+        print(f"Unable to grant permission to {os.getcwd()}/wordlists{Exception}")

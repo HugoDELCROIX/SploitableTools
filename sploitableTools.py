@@ -49,7 +49,7 @@ $$\   $$ |$$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$\ $$  __$$ |$$ |  $$ |$$ |$$   ___
     terminal_menu = TerminalMenu(options)
     menu_entry_index = terminal_menu.show()
 
-    subprocess.run(["python", "scripts/" + scripts[menu_entry_index]])
+    subprocess.run(["python3", "scripts/" + scripts[menu_entry_index]])
 
 
 if __name__ == "__main__":

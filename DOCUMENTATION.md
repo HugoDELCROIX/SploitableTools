@@ -3,7 +3,7 @@
 
 # 1. XSS Vulnerability Scanner
 
-This script will perform a simple XSS vulnerability scan on every forms of a website. It will ask you for an url. It must of type `https://www.example.com`. This script do not support IP address yet.
+This script will perform a simple XSS vulnerability scan on every forms of a website. It will ask you for an url. It must be of type `https://www.example.com`. This script do not support IP address yet.
 
 You can try the script by entering this url: https://xss-game.appspot.com/level1/frame
 

@@ -12,7 +12,7 @@ With SploitableTools, you will be able to:
 - Discover the good practices and put safety at the forefront of your projects.
 - Try to hack your own projects to discover vulnerabilities
 
-Obviously, it won't be as powerful as some of the most powerful tools on the web, but it will certainly help you learning programming and cybersecurity.
+Obviously, it won't be as powerful as some of the strongest tools on the web, but it will certainly help you learning programming and cybersecurity.
 
 # Installation
 

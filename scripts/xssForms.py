@@ -1,4 +1,7 @@
-import requests, optparse, colorama
+#!/usr/bin/python
+
+import requests, optparse
+from colors import green, red, reset
 from pprint import pprint
 from bs4 import BeautifulSoup as bs
 from urllib.parse import urljoin
@@ -46,9 +49,9 @@ def submit(form_details, url, value):
         if input_name and input_value:
             data[input_name] = input_value
 
-    print(f"\033[32m[+] Sendind the payload to {target} \033[0m")
+    print(f"{green}[+] Sendind the payload to {target} {reset}")
     if data:
-        print(f"\033[33mData sent : {data}\033[0m")
+        print(f"\033[33mData sent : {data}{reset}")
     if form_details["method"] == "post":
         ## Send a POST request
         return requests.post(target, data=data)
@@ -61,7 +64,7 @@ def scan(url):
     try:
         forms = get_forms(url)
 
-        print(f"\033[32m[+] Detected {len(forms)} forms on {url}\033[0m")
+        print(f"{green}[+] Detected {len(forms)} forms on {url}{reset}")
         script = "<Script>alert('hackable')</scripT>"
 
         is_vulnerable = False
@@ -70,16 +73,16 @@ def scan(url):
             form_details = get_form_details(form)
             content = submit(form_details, url, script).content.decode()
             if script in content:
-                print(f"\033[32m[+] XSS detected on {url}\033[0m")
+                print(f"{green}[+] XSS detected on {url}{reset}")
                 print(f"\033[33m[+] Form details :")
                 pprint(form_details)
-                print("\033[0m")
+                print("{reset}")
                 is_vulnerable = True
 
         if is_vulnerable:
-            result = "\033[32m\r\nThis Website is vulnerable to XSS.\033[0m\r\n"
+            result = f"{red}\r\nThis Website is vulnerable to XSS.{reset}\r\n"
         else:
-            result = "\033[31m\r\nThis Website is not vulnerable to XSS.\033[0m\r\n"
+            result = f"{red}\r\nThis Website is not vulnerable to XSS.{reset}\r\n"
 
         return result
     except NameError as e:
@@ -92,4 +95,4 @@ if __name__ == "__main__":
     if target:
         print(scan(target))
     else:
-        print("Enter a valid url. Check -h for help.")
+        print("Enter a valid url. Check documentation.")

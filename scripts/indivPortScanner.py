@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import socket, optparse, threading
+from colors import green, red, reset
 
 parser = optparse.OptionParser()
 
@@ -24,19 +25,17 @@ def portscan(host, port):
             retBanner(port, sock)
         except socket.error:
             print(
-                "\033[32m"
+                green
                 + "Port {} is open. Can't identify service running.".format(port)
-                + "\033[0m"
+                + reset
             )
     except socket.error:
-        print(
-            "\033[31m" + "Error when scanning port {} : closed".format(port) + "\033[0m"
-        )
+        print(red + "Error when scanning port {} : closed".format(port) + reset)
 
 
 def retBanner(port, sock):
     banner = sock.recv(1024).decode()
-    print("\033[32m" + "Port {} is open with {}".format(port, banner[:-2]) + "\033[0m")
+    print(green + "Port {} is open with {}".format(port, banner[:-2]) + reset)
 
 
 def scan(host, ports):

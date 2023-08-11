@@ -22,16 +22,16 @@ Clone the repository:
 git clone https://github.com/HugoDELCROIX/SploitableTools
 ```
 
-Install required modules:
+Install required modules (make sure to have `pip` installed):
 
 ```
-python install.py
+python3 install.py
 ```
 
 Run SploitableTools:
 
 ```
-python sploitableTools.py
+python3 sploitableTools.py
 ```
 
 # Documentation

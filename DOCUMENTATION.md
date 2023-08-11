@@ -18,3 +18,7 @@ This script will perform a port scan then compare the results with a wordlist co
 # 4. Bruteforce SSH Credentials
 
 This script will perform a Dictionary-based bruteforce attack on a SSH session. You need to provide the hostname and username used to connect to the session (username@hostname). You also need to create a file.txt containing passwords to try connecting with and move it to the `wordlists` directory. You can either find the `passwdList.txt` file in the `wordlists` directory and fill it.
+
+# How to use a wordlist ?
+
+Every scripts of the framework that require a wordlist are working the same. **You need to move your file.txt in the `wordlists` directory so the script can find it.** An other way is to write the entire path of the file.
